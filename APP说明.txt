@@ -1,0 +1,50 @@
+>>集成了数据库框架
+                compile 'org.litepal.android:core:1.6.0'
+
+>>集成了ios风格的switch开关按钮
+                compile 'com.github.zcweng:switch-button:0.0.3@aar'
+                参考说明:https://github.com/zcweng/SwitchButton
+
+>>集成了list多功能控件(上拉/下拉/分组/滑动移除)
+                compile 'com.yanzhenjie:recyclerview-swipe:1.1.3'
+                参考说明:https://github.com/yanzhenjie/SwipeRecyclerView
+
+>>集成了图片加载工具
+               compile 'me.panpf:sketch:2.6.0'
+               参考说明:https://github.com/panpf/sketch
+
+以上是几个比较好用的库
+先查考饿了吗、美团、淘宝之类的app，先做界面
+
+下拉我的项目后，你创建个分支自己做，每天都提交一下代码（非必须，只是形成一个好习惯）。。。有问题和我留言，我看到就回你
+
+关于文件的分类：	最好按功能分类（adapter和对应的activity在一个文件夹中）
+			fragment和界面里面的activity在一个以文件中，activity里面如果还有activity就创建文件夹在存放（千万不要乱）
+			domain是个放数据基类的文件夹
+
+进入app后先扫描二维码再进入购买等界面，扫描二维码我推荐给你的公众号里面曾经推送过，可以去看看
+
+
+一些常用的git命令行
+
+git  rempte add origin url
+
+git fetch                                 获取最新的
+
+git merge origin/分支名         合并本地分支
+
+Git clone +url                        克隆远程仓库
+
+git branch 本地分支
+
+git branch -r 远程分支
+
+git branch                            查看本地分支
+
+git checkout 分支名             切换分支
+
+git commit -m”"                   提交分支到本地缓存区
+
+git push origin + 空格 + 分支名              推送分支
+
+git add .                                添加更改内容
