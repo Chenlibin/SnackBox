@@ -1,0 +1,52 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,91,134,180,214,259,307,354,664",
+                        "endLines": "2,3,4,5,6,7,8,16,19",
+                        "endColumns": "35,42,45,33,44,47,46,12,12",
+                        "endOffsets": "86,129,175,209,254,302,349,659,819"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        }
+    ]
+}

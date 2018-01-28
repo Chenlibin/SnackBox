@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4_ic_launcher.png.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ic_launcher.png.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_result.xml.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_result.xml"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_ic_launcher.png.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_scan_line.png.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\scan_line.png"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_activity_capture.xml.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_capture.xml"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_shadow.png.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow.png"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_ic_launcher.png.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_beep.ogg.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_qr_code_bg.9.png.flat",
+        "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\qr_code_bg.9.png"
+    }
+]

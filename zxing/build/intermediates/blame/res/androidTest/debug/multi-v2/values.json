@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\file\\SnackBox\\zxing\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,91,134,180,214,259,307,354,664",
+                        "endLines": "2,3,4,5,6,7,8,16,19",
+                        "endColumns": "35,42,45,33,44,47,46,12,12",
+                        "endOffsets": "86,129,175,209,254,302,349,659,819"
+                    }
+                }
+            ]
+        }
+    ]
+}
