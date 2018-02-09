@@ -1,4 +1,4 @@
->>集成了数据库框架
+﻿>>集成了数据库框架
                 compile 'org.litepal.android:core:1.6.0'
 
 >>集成了ios风格的switch开关按钮
@@ -48,3 +48,4 @@ git commit -m”"                   提交分支到本地缓存区
 git push origin + 空格 + 分支名              推送分支
 
 git add .                                添加更改内容
+悲惨表示无法运行成功

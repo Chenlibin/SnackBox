@@ -2,6 +2,8 @@ package com.clb.snackbox;
 
 import android.app.Application;
 
+import com.uuzuche.lib_zxing.activity.ZXingLibrary;
+
 /**
  * Created by Liber on 2018/1/16.
  */
@@ -18,6 +20,7 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
         //初始化...
+        ZXingLibrary.initDisplayOpinion(this);
     }
 
 
