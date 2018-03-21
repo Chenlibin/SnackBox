@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/launch_background"
+    tools:context="com.clb.snackbox.launch.LaunchUI">
+
+    <TextView
+        android:id="@+id/userText"
+        style="@style/w_w"
+        android:layout_above="@+id/user"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/user"
+        android:textColor="#E6B311"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/user"
+        style="@style/launch_button"
+        android:layout_above="@+id/administratorText"
+        android:layout_marginBottom="15dp"
+        android:background="#E21216"
+        android:onClick="jumpToQR"
+        android:text="@string/goToUser"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/administratorText"
+        style="@style/w_w"
+        android:layout_centerInParent="true"
+        android:text="@string/administrator"
+        android:textColor="#29172D"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/administrator"
+        style="@style/launch_button"
+        android:layout_below="@+id/administratorText"
+        android:layout_marginTop="15dp"
+        android:background="#303F9F"
+        android:onClick="jumpToLogin"
+        android:text="@string/goToAdministrator"
+        android:textColor="#fff" />
+</RelativeLayout>

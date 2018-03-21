@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <!-- 发布活动管理 -->
+    <RelativeLayout
+        android:id="@+id/activity"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_activity" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+    <!-- 商品管理 -->
+    <RelativeLayout
+        android:id="@+id/goods"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_goods" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+    <!-- 用户意见 -->
+    <RelativeLayout
+        android:id="@+id/customer_advise"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_customer_advise" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+    <!-- 统计零食的销售情况 -->
+    <RelativeLayout
+        android:id="@+id/good_sum"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_good_sum" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+    <!-- 发布活动管理 -->
+    <RelativeLayout style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_activity" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

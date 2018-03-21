@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 管理员管理 -->
+    <RelativeLayout
+        android:id="@+id/control_admin"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_control_admin" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+    <!-- 进入买买买 -->
+    <RelativeLayout
+        android:id="@+id/go_to_buy"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_go_to_buy" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+    <!-- 退出登录 -->
+    <RelativeLayout
+        android:id="@+id/login_out"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_login_out" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

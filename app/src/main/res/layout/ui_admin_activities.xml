@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_bar" />
+
+    <!-- 活动一 -->
+    <LinearLayout
+        android:id="@+id/activity_one"
+        style="@style/actvities_linearLayout"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            style="@style/actvities_text"
+            android:text="@string/activities_one_tip" />
+
+        <TextView
+            android:id="@+id/one_conntent"
+            style="@style/actvities_text"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+    <!-- 活动二 -->
+    <LinearLayout
+        android:id="@+id/activity_two"
+        style="@style/actvities_linearLayout"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            style="@style/actvities_text"
+            android:text="@string/activities_two_tip" />
+
+        <TextView
+            android:id="@+id/two_conntent"
+            style="@style/actvities_text"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+    <!-- 活动三 -->
+    <LinearLayout
+        android:id="@+id/activity_three"
+        style="@style/actvities_linearLayout"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            style="@style/actvities_text"
+            android:text="@string/activities_three_tip" />
+
+        <TextView
+            android:id="@+id/three_conntent"
+            style="@style/actvities_text"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

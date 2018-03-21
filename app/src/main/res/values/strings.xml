@@ -1,3 +1,40 @@
 <resources>
-    <string name="app_name">SnackBox</string>
+    <string name="app_name">零食售卖</string>
+    <string name="error_tip">好像出错了</string>
+
+    <!--  第一次打开app 的界面  launchActivity  -->
+    <string name="administrator">我是管理员</string>
+    <string name="user">我来买买买</string>
+    <string name="goToAdministrator">进入管理员</string>
+    <string name="goToUser">进入买买买</string>
+
+    <!-- 登录注册界面   LoginActivity ResigistActivity  -->
+    <string name="admin_login">管理员登录</string>
+    <string name="resigist_admin">注册管理员</string>
+    <string name="admin_number">账号:</string>
+    <string name="admin_tip">请输入手机号</string>
+    <string name="password">密码:</string>
+    <string name="password_tip">请输入密码</string>
+    <string name="submit">提交</string>
+    <string name="resigist_jump">加入我们？注册</string>
+    <string name="code_number">验证码:</string>
+    <string name="code_number_hint">请输入验证码</string>
+    <string name="login_in">进入登录界面</string>
+    <string name="verification_code_number">获取验证码</string>
+
+    <!--  管理员界面   AdminActivity -->
+    <string name="admin_title">尊敬的管理员</string>
+    <string name="admin_activity">活动管理</string>
+    <string name="admin_goods">商品管理</string>
+    <string name="admin_customer_advise">客户意见</string>
+    <string name="admin_good_sum">零食销售统计</string>
+    <string name="admin_control_admin">管理管理员</string>
+    <string name="admin_go_to_buy">进入买买买</string>
+    <string name="admin_login_out">退出登录</string>
+
+    <!-- 活动管理 -->
+    <string name="activities_one_tip">活动一：</string>
+    <string name="activities_two_tip">活动二：</string>
+    <string name="activities_three_tip">活动三：</string>
+
 </resources>
