@@ -1,5 +1,7 @@
 package com.clb.clblibrary.net;
 
+import java.util.concurrent.TimeUnit;
+
 import okhttp3.OkHttpClient;
 
 /**
@@ -8,12 +10,12 @@ import okhttp3.OkHttpClient;
 
 public class OKHttpUtil {
 
-    private static OkHttpClient client = new OkHttpClient();
+    private static OkHttpClient client;
 
     private static OKHttpUtil httpUtil = new OKHttpUtil();
 
     private OKHttpUtil(){
-        
+        client = new OkHttpClient().
     }
 
     public static OKHttpUtil getHttpUtil(){
