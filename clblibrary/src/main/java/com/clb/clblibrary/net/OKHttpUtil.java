@@ -45,8 +45,8 @@ public class OKHttpUtil {
      ********************************/
 
     public void asyncPostRequest(String url, Callback callback, Param... params) {
-        Request request = createPostParam(url, params);
-        client.newCall(request).enqueue(callback);
+//        Request request = createPostParam(url, params);
+//        client.newCall(request).enqueue(callback);
     }
 
 
