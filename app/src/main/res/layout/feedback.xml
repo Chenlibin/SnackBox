@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 用户意见反馈,含有文本编辑框，电话，短信，邮件，微信不同的反馈方式 -->
+    <!-- TODO：②文本框加入字数限制，并显示字数（对文本进行监听，并写方法） -->
+
+    <!-- 输入文本框 -->
+    <EditText
+        android:id="@+id/feedback_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_background"
+        android:gravity="top"
+        android:hint="请输入意见反馈"
+        android:padding="5dp"/>
+
+    <!-- TODO：①需要在下面按钮中加入对应的图标 -->
+
+    <!-- 打电话按钮 -->
+    <TextView
+        android:id="@+id/tv_call_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_bg"
+        android:padding="10dp"
+        android:text="直接给我们打电话"/>
+
+    <!-- 短信按钮 -->
+    <TextView
+        android:id="@+id/tv_send_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg"
+        android:padding="10dp"
+        android:text="直接给我们发短信"/>
+
+    <!-- 邮件按钮 -->
+    <TextView
+        android:id="@+id/tv_send_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg"
+        android:padding="10dp"
+        android:text="直接给我们发邮件"/>
+
+    <!-- 微信按钮 -->
+    <TextView
+        android:id="@+id/tv_wx_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg"
+        android:padding="10dp"
+        android:text="直接给我们发微信"/>
+
+</LinearLayout>
