@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <!-- 个人主页，包括姓名，公司，邮箱等信息
     TODO：邮箱验证，地区载入快速索引，简介需要字数限制，监听头像 -->
@@ -11,8 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/iv_app_person_photo"
@@ -26,37 +26,43 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_app_person_pic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
-                android:textSize="16sp"
-                android:text="修改图片"/>
+                android:text="修改图片"
+                android:textSize="16sp"/>
+
             <View style="@style/DeepUnderLine"/>
+
             <RelativeLayout
                 android:id="@+id/rl_person_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="15dp">
+
                 <TextView
                     android:id="@+id/tv_person_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:text="姓名"/>
+                    android:text="姓名"
+                    android:textSize="16sp"/>
+
                 <TextView
                     android:id="@+id/tv_app_person_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:drawablePadding="8dp"
-                    android:textSize="16sp"
+                    android:drawableRight="@mipmap/ic_back_right"
                     android:text="陈立彬"
-                    android:drawableRight="@mipmap/ic_back_right"/>
+                    android:textSize="16sp"/>
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
+
     <View style="@style/DeepUnderLine"/>
 
     <RelativeLayout
@@ -64,19 +70,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="收藏"/>
+            android:text="收藏"
+            android:textSize="16sp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:drawablePadding="8dp"
-            android:textSize="16sp"
-            android:drawableRight="@mipmap/ic_back_right"/>
+            android:drawableRight="@mipmap/ic_back_right"
+            android:textSize="16sp"/>
     </RelativeLayout>
+
     <View style="@style/DeepUnderLine"/>
 
     <RelativeLayout
@@ -84,21 +93,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="评论"/>
+            android:text="评论"
+            android:textSize="16sp"/>
+
         <TextView
             android:id="@+id/tv_person_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/ic_back_right"
             android:text="999+"
-            android:textSize="16sp"
-            android:drawableRight="@mipmap/ic_back_right"/>
+            android:textSize="16sp"/>
     </RelativeLayout>
+
     <View style="@style/DeepUnderLine"/>
 
     <RelativeLayout
@@ -106,21 +118,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="公司"/>
+            android:text="公司"
+            android:textSize="16sp"/>
+
         <TextView
             android:id="@+id/tv_person_company"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/ic_back_right"
             android:text=""
-            android:textSize="16sp"
-            android:drawableRight="@mipmap/ic_back_right"/>
+            android:textSize="16sp"/>
     </RelativeLayout>
+
     <View style="@style/DeepUnderLine"/>
 
     <RelativeLayout
@@ -128,21 +143,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="职位"/>
+            android:text="职位"
+            android:textSize="16sp"/>
+
         <TextView
             android:id="@+id/tv_person_duty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/ic_back_right"
             android:text="软件开发"
-            android:textSize="16sp"
-            android:drawableRight="@mipmap/ic_back_right"/>
+            android:textSize="16sp"/>
     </RelativeLayout>
+
     <View style="@style/DeepUnderLine"/>
 
     <RelativeLayout
@@ -150,21 +168,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="邮箱"/>
+            android:text="邮箱"
+            android:textSize="16sp"/>
+
         <TextView
             android:id="@+id/tv_person_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/ic_back_right"
             android:text="需要验证"
-            android:textSize="16sp"
-            android:drawableRight="@mipmap/ic_back_right"/>
+            android:textSize="16sp"/>
     </RelativeLayout>
+
     <View style="@style/DeepUnderLine"/>
 
     <RelativeLayout
@@ -172,21 +193,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="简介"/>
+            android:text="简介"
+            android:textSize="16sp"/>
+
         <TextView
             android:id="@+id/tv_person_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/ic_back_right"
             android:text="字数限制"
-            android:textSize="16sp"
-            android:drawableRight="@mipmap/ic_back_right"/>
+            android:textSize="16sp"/>
     </RelativeLayout>
+
     <View style="@style/DeepUnderLine"/>
 
     <RelativeLayout
@@ -194,21 +218,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="地区"/>
+            android:text="地区"
+            android:textSize="16sp"/>
+
         <TextView
             android:id="@+id/tv_person_area"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/ic_back_right"
             android:text=""
-            android:textSize="16sp"
-            android:drawableRight="@mipmap/ic_back_right"/>
+            android:textSize="16sp"/>
     </RelativeLayout>
+
     <View style="@style/DeepUnderLine"/>
 
 </LinearLayout>

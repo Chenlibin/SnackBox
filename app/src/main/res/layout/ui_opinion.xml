@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 用户的评价：五星好评 -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="352dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/haoping"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="96dp"
+            android:gravity="center"
+            android:text="对我们APP有什么看法有什么看法?"
+            android:textColor="@color/blackText"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayLine"/>
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="朕赐你五星好评"
+            android:textSize="17sp"/>
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/grayLine"/>
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="什么鬼，朕要吐槽"
+            android:textSize="17sp"/>
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/grayLine"/>
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="退下，朕看看再说"
+            android:textSize="17sp"/>
+    </LinearLayout>
+</RelativeLayout>
+

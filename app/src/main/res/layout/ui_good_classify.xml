@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:background="@color/colorPrimary"
+              android:background="@color/color_orange"
               android:gravity="center"
               android:orientation="horizontal"
               android:paddingBottom="10dp"
@@ -24,4 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:src="@mipmap/good_top_arrow_down" />
+
+
+
 </LinearLayout>

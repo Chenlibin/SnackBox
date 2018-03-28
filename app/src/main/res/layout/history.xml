@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:zhy="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/ll_search_start"
     android:visibility="visible"
@@ -18,11 +17,51 @@
         android:text="热门搜索"/>
     <View style="@style/DeepUnderLine"/>
 
-<!-- TODO：此处位置必须加入候补选项！以存放热门搜索的链接！ -->
+<!-- 存放热门搜索的链接！ -->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/blackText"
+        android:gravity="center"
+        android:text="辣条"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/blackText"
+        android:text="可乐"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/blackText"
+        android:text="肥牛"/>
+</LinearLayout>
+
 
     <View style="@style/DeepUnderLine"
           android:layout_height="10dp"/>
 
+    <!-- 搜索历史 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,11 +71,13 @@
         android:text="搜索历史"/>
     <View style="@style/DeepUnderLine"/>
 
+    <!-- 搜索历史的列表 -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_search_his"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <!-- 按一下清除历史记录 -->
     <TextView
         android:id="@+id/tv_clean_his"
         android:visibility="visible"
