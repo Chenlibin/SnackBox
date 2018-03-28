@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_search_start"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 搜索时的下拉列表，可以显示历史记录，热门搜索 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/blackText"
+        android:text="热门搜索"/>
+    <View style="@style/DeepUnderLine"/>
+
+<!-- TODO：此处位置必须加入候补选项！以存放热门搜索的链接！ -->
+
+    <View style="@style/DeepUnderLine"
+          android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/blackText"
+        android:text="搜索历史"/>
+    <View style="@style/DeepUnderLine"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_his"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_clean_his"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/blackText"
+        android:text="清除历史记录"/>
+
+</LinearLayout>

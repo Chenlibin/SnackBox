@@ -3,4 +3,24 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!-- 纯黑 -->
+    <color name="color_black">#000000</color>
+    <!-- 字体黑色 -->
+    <color name="blackText">#212121</color>
+    <!-- 透明色 -->
+    <color name="colorTransparent">#00000000</color>
+    <!--背景 纯白色-->
+    <color name="colorWhite">#ffffff</color>
+    <!-- 吃！ -->
+    <color name="color_orange">#ef6c00</color>
+    <color name="color_pink">#CA004A</color>
+    <color name="color_red_orange">#DF3000</color>
+    <color name="color_green">#99CC00</color>
+    <color name="color_yellow">#FFCC33</color>
+    <!-- 原谅绿 -->
+    <color name="yuanliangse">#6FB452</color>
+    <!-- 灰色下划线 -->
+    <color name="grayLine">#e5e5e5</color>
+    <!-- 灰色，二级字段 -->
+    <color name="gray2">#666666</color>
 </resources>
