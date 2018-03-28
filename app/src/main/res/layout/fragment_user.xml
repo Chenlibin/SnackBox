@@ -5,47 +5,49 @@
     android:background="#f0f0f0"
     android:orientation="vertical">
 
-    <!-- 管理员管理 -->
+
+    <!-- 提意见 -->
     <RelativeLayout
-        android:id="@+id/control_admin"
+        android:id="@+id/user_advise"
         style="@style/admin_control_relative">
 
         <TextView
             style="@style/admin_control_text"
-            android:text="@string/admin_control_admin" />
+            android:text="@string/user_advise" />
 
         <ImageView
             style="@style/admin_control_image"
             android:src="@mipmap/right_icon" />
 
     </RelativeLayout>
-    <!-- 进入买买买 -->
+    <!-- 购买记录 -->
     <RelativeLayout
-        android:id="@+id/go_to_buy"
+        android:id="@+id/user_recode"
         style="@style/admin_control_relative">
 
         <TextView
             style="@style/admin_control_text"
-            android:text="@string/admin_go_to_buy" />
+            android:text="@string/user_record" />
 
         <ImageView
             style="@style/admin_control_image"
             android:src="@mipmap/right_icon" />
 
     </RelativeLayout>
-    <!-- 退出登录 -->
+    <!-- 登录管理员 -->
     <RelativeLayout
-        android:id="@+id/login_out"
+        android:id="@+id/user_to_admin"
         style="@style/admin_control_relative">
 
         <TextView
             style="@style/admin_control_text"
-            android:text="@string/admin_login_out" />
+            android:text="@string/user_to_admin" />
 
         <ImageView
             style="@style/admin_control_image"
             android:src="@mipmap/right_icon" />
 
     </RelativeLayout>
+
 
 </LinearLayout>

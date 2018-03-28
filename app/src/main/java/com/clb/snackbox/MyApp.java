@@ -15,17 +15,18 @@ import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 public class MyApp extends Application {
 
     public static MyApp app;
+
     //在onCreate里面执行
     @Override
     public void onCreate() {
         super.onCreate();
         app = this;
-        //初始化...
+        //初始化二维码
         ZXingLibrary.initDisplayOpinion(this);
     }
 
 
-    public static MyApp getApp(){
+    public static MyApp getApp() {
         return app;
     }
 }

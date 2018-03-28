@@ -40,8 +40,8 @@ dependencies {
     compile 'com.github.hackware1993:MagicIndicator:1.5.0'
     //高级list控件，可以上拉/下拉/分组/滑动移除
     compile 'com.yanzhenjie:recyclerview-swipe:1.1.4'
-    //网络
-    compile 'com.squareup.okhttp3:okhttp:3.10.0'
-    compile 'com.squareup.okio:okio:1.14.0'
+    //网络 okhttp 2
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.squareup.okio:okio:1.7.0'
     compile 'com.google.code.gson:gson:2.8.1'
 }

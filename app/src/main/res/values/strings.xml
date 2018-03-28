@@ -37,4 +37,9 @@
     <string name="activities_two_tip">活动二：</string>
     <string name="activities_three_tip">活动三：</string>
 
+    <!--  用户的我的界面  -->
+    <string name="user_advise">建议意见</string>
+    <string name="user_record">购买记录</string>
+    <string name="user_to_admin">登录管理员</string>
+
 </resources>
