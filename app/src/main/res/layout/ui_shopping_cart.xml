@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE">
+    <!-- 购物车沉底，可以随时点开，和标题栏一样 -->
+    <!-- 中间的列表不知道什么，照葫芦画瓢的，如果可以收起来更好 -->
+    <!-- Todo：把shopping_cart_detail.xml放进中间列表就完美了 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shopping_cart_bottom"
+        android:background="#afaeae"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e7e4e4">
+
+            <!-- 购物车标题 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="购物车"
+                android:textColor="@color/color_black"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/clear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <!-- 清空按钮 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清空"
+                    android:textColor="@color/blackText"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 中间那个不知道怎么用的列表 -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorWhite">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <!-- 黑灰色沉底栏 -->
+    <LinearLayout
+        android:id="@+id/shopping_cart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fd383838"
+        android:clickable="true"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <!-- 购物车图标的蓝色圆圈底 -->
+    <FrameLayout
+        android:id="@+id/shopping_cart_layout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/lineview"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/blue_circle"
+        android:clickable="true">
+
+        <!-- 购物车图标 -->
+        <ImageView
+            android:id="@+id/shopping_cart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_shopping_cart_white_24dp"/>
+    </FrameLayout>
+
+    <!-- 底部有一条线 -->
+    <TextView
+        android:id="@+id/lineview"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"/>
+
+    <!-- 小红球，显示购物车有多少东西 -->
+    <TextView
+        android:id="@+id/shopping_cart_total_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shopping_cart_bottom"
+        android:layout_alignRight="@id/shopping_cart_layout"
+        android:background="@drawable/small_red_circle"
+        android:text="1"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
