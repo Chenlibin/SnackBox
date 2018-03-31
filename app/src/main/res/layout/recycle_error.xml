@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:layout_width="match_parent"
     android:layout_height="48dp">
+=======
+              android:layout_width="match_parent"
+              android:layout_height="48dp">
+>>>>>>> origin/master
 
-    <!-- 可以inclue到其他的XMLl,当数据加载不出来显示，监听TextView，点击刷新 -->
+    <!-- 可以inclue到其他的XML,当数据加载不出来显示，监听TextView，点击刷新 -->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+<<<<<<< HEAD
         android:text="没有更多数据，点击加载更多" />
+=======
+        android:text="没有更多数据，下拉加载更多"/>
+>>>>>>> origin/master
 
 </RelativeLayout>

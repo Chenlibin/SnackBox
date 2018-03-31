@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <!-- 纯黑 -->
     <color name="color_black">#000000</color>
+    <!-- 鲜红 -->
+    <color name="red">#ea0f1e</color>
     <!-- 字体黑色 -->
     <color name="blackText">#212121</color>
     <!-- 透明色 -->
