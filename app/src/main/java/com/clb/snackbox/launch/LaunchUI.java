@@ -44,7 +44,7 @@ public class LaunchUI extends RootActivity {
         editor.putBoolean("first",false);
         editor.putString("jump",USER);
         editor.commit();
-        jumpAndFinsh(QRActivity.class);
+        jump(QRActivity.class);
     }
 
     //进入管理员登录界面
@@ -52,6 +52,6 @@ public class LaunchUI extends RootActivity {
         editor.putBoolean("first",false);
         editor.putString("jump",ADMIN);
         editor.commit();
-        jumpAndFinsh(LoginActivity.class);
+        jump(LoginActivity.class);
     }
 }

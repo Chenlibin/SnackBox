@@ -25,6 +25,8 @@
         android:layout_marginLeft="5dp"
         android:background="@null"
         android:hint="@string/admin_tip"
+        android:inputType="number"
+        android:maxLength="11"
         android:textSize="23sp" />
 
     <TextView
@@ -32,6 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+
         android:layout_toLeftOf="@+id/password"
         android:text="@string/password"
         android:textSize="23sp" />
@@ -44,6 +47,7 @@
         android:layout_marginLeft="5dp"
         android:background="@null"
         android:hint="@string/password_tip"
+        android:inputType="textPassword"
         android:textSize="23sp" />
 
     <Button
