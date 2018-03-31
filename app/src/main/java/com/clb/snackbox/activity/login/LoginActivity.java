@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.clb.clblibrary.activity.RootActivity;
 import com.clb.snackbox.R;
+import com.clb.snackbox.activity.AdminActivity;
 
 /**
  * Created by Liber on 2018/3/8.
@@ -43,6 +44,7 @@ public class LoginActivity extends RootActivity {
     public void loginIn(View view) {
         if (entry()) {
             toast(R.string.login_in);
+            jumpAndFinsh(AdminActivity.class);
         }
     }
 
