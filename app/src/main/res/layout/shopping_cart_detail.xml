@@ -7,7 +7,8 @@
     <!-- 购物车里面的商品列表，里面的商品可以增减，选择和取消 -->
     <!-- TODO：需要加入菜单栏，供消费者删除多余或者过期的商品 -->
 
-    <!-- 选中取消矿，和mipmap里面的ic_check，ic_uncheck配套 -->
+    <!-- 选中取消点，和mipmap里面的ic_check，ic_uncheck配套 -->
+
     <ImageView
         android:id="@+id/CheckGood"
         android:layout_width="wrap_content"
@@ -22,8 +23,8 @@
     <!-- 商品图示 -->
     <ImageView
         android:id="@+id/Goods"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerVertical="true"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="10dp"
@@ -32,11 +33,10 @@
         android:layout_toRightOf="@+id/CheckGood"
         android:background="@mipmap/test_goods"/>
 
-    <!-- TODO：内容尽量详细化 -->
     <LinearLayout
         android:id="@+id/GoodInfo"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
@@ -47,17 +47,46 @@
         android:visibility="visible"
         android:weightSum="3">
 
-        <!-- 名称（日后可以加入更多详细的内容） -->
-        <TextView
-            android:id="@+id/ItemChild"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="top"
-            android:layout_marginTop="2dp"
-            android:layout_weight="1"
-            android:text="商品名称"
-            android:textColor="#003333"
-            android:textSize="12sp"/>
+            android:layout_weight="1">
+
+            <!-- 名称（日后可以加入更多详细的内容） -->
+            <TextView
+                android:id="@+id/GoodName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:text="商品名称"
+                android:textColor="#003333"
+                android:textSize="12sp"/>
+
+            <!-- 日期 -->
+            <TextView
+                android:id="@+id/TimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="2018-4-1"/>
+            <!-- 有没有存货 -->
+            <TextView
+                android:id="@+id/SellText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:text="已售完"
+                android:textColor="@color/color_red_orange"/>
+            <!-- 单价 -->
+            <TextView
+                android:id="@+id/unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:text="单价：10.0"/>
+        </FrameLayout>
+
 
         <!-- 价格数量，与及增减按钮 -->
         <FrameLayout
@@ -65,39 +94,45 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
+            <!-- 合计价格 -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="left|center">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left|bottom"
                     android:layout_marginLeft="15dp"
+                    android:textSize="25dp"
                     android:text="￥"
                     android:textColor="@color/color_red_orange"/>
 
                 <TextView
-                    android:id="@+id/right_dish_price"
+                    android:id="@+id/good_price"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="10.0"/>
+                    android:layout_height="match_parent"
+                    android:text="20.0"
+                    android:textColor="@color/blackText"
+                    android:textSize="30dp"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="right|center_vertical"
+                android:layout_gravity="right|center"
                 android:layout_marginBottom="1dp"
                 android:layout_marginRight="16dp"
                 android:gravity="end"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/right_dish_remove"
+                    android:id="@+id/right_good_remove"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
+                    android:layout_gravity="bottom"
                     android:clickable="true"
                     android:src="@mipmap/ic_remove_circle_outline_blue_700_36dp"/>
 
@@ -105,15 +140,17 @@
                     android:id="@+id/right_dish_account"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
                     android:gravity="center_horizontal"
-                    android:text="1"
+                    android:text="2"
                     android:textColor="@color/blackText"
                     android:textSize="18dp"/>
 
                 <ImageView
-                    android:id="@+id/right_dish_add"
+                    android:id="@+id/right_good_add"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
+                    android:layout_gravity="bottom"
                     android:clickable="true"
                     android:src="@mipmap/ic_add_circle_blue_700_36dp"/>
             </LinearLayout>
@@ -145,7 +182,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignTop="@+id/PriceNew"
                 android:gravity="bottom"
-                android:text="X 1"
+                android:text="离折扣结束还有： 天"
                 android:textColor="#333333"
                 android:textSize="12sp"/>
 
