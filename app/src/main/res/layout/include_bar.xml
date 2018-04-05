@@ -5,7 +5,6 @@
     android:background="#abcdef"
     android:orientation="vertical">
 
-
     <!-- 左边的按钮ss -->
     <ImageView
         android:id="@+id/leftImage"
@@ -26,7 +25,8 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
         android:textColor="#000"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:text=""/>
 
 
     <!--  右边的按钮 -->

@@ -3,6 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#EEEEEE">
+
     <!-- 购物车沉底，可以随时点开，和标题栏一样 -->
     <!-- 中间的列表不知道什么，照葫芦画瓢的，如果可以收起来更好 -->
     <!-- Todo：把shopping_cart_detail.xml放进中间列表就完美了 -->

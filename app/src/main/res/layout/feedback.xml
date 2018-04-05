@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include layout="@layout/include_bar">
+
+    </include>
+
     <!-- 用户意见反馈,含有文本编辑框，电话，短信，邮件，微信不同的反馈方式 -->
     <!-- TODO：②文本框加入字数限制，并显示字数（对文本进行监听，并写方法） -->
 
