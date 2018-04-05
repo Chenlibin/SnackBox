@@ -54,20 +54,6 @@
         android:maxLength="4"
         android:textSize="23sp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="90dp"
-        android:layout_height="25dp"
-        android:layout_above="@+id/password"
-        android:layout_alignBottom="@+id/code_number"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="2dp"
-        android:layout_toRightOf="@+id/code_number"
-        android:background="@drawable/buttonstyle"
-        android:text="@string/verification_code_number"
-        android:textColor="#D7D7D7"
-        android:textSize="12sp" />
-
     <TextView
         android:id="@+id/password_name"
         android:layout_width="wrap_content"
