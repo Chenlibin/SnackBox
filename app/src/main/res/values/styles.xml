@@ -49,6 +49,22 @@
         <item name="android:button">@null</item>
     </style>
 
+    <style name="resigist_text">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="resigist_edit">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
     <!-- 管理员界面 -->
     <style name="admin_control_relative" parent="m_w">
         <item name="android:layout_marginTop">10dp</item>
@@ -76,6 +92,7 @@
         <item name="android:padding">10dp</item>
         <item name="android:orientation">horizontal</item>
     </style>
+
     <style name="actvities_text" parent="w_w">
         <item name="android:textColor">#444</item>
         <item name="android:textSize">20sp</item>

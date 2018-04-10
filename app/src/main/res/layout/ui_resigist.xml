@@ -1,88 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <include layout="@layout/include_bar" />
 
-    <TextView
-        android:id="@+id/number_tip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/code_number_tip"
-        android:layout_marginBottom="18dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="5dp"
-        android:layout_toLeftOf="@+id/resigist_number"
-        android:text="@string/admin_number"
-        android:textSize="23sp" />
+    <!--  用户名  -->
+    <LinearLayout
+        style="@style/m_w"
+        android:layout_marginTop="50dp"
+        android:padding="10dp">
 
-    <EditText
-        android:id="@+id/resigist_number"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/number_tip"
-        android:layout_centerHorizontal="true"
-        android:background="@null"
-        android:hint="@string/admin_tip"
-        android:inputType="phone"
-        android:maxLength="11"
-        android:textSize="23sp" />
+        <TextView
+            android:id="@+id/name_tip"
+            style="@style/resigist_text"
+            android:text="@string/admin_name" />
 
-    <TextView
-        android:id="@+id/code_number_tip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password_name"
-        android:layout_marginBottom="18dp"
-        android:layout_toLeftOf="@+id/code_number"
-        android:text="@string/code_number"
-        android:textSize="23sp" />
+        <EditText
+            android:id="@+id/resigist_name"
+            style="@style/resigist_edit"
+            android:hint="@string/admin_name_tip"
+            android:inputType="text" />
 
-    <EditText
-        android:id="@+id/code_number"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password"
-        android:layout_alignBottom="@+id/code_number_tip"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
-        android:background="@null"
-        android:hint="@string/code_number_hint"
-        android:inputType="number"
-        android:maxLength="4"
-        android:textSize="23sp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/password_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_toLeftOf="@+id/password"
-        android:text="@string/password"
-        android:textSize="23sp" />
+    <!--  邮箱  -->
+    <LinearLayout
+        style="@style/m_w"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="5dp"
-        android:background="@null"
-        android:hint="@string/password_tip"
-        android:inputType="textPassword"
-        android:textSize="23sp" />
+        <TextView
+            android:id="@+id/email_tip"
+            style="@style/resigist_text"
+            android:text="@string/admin_email" />
+
+        <EditText
+            android:id="@+id/resigist_email"
+            style="@style/resigist_edit"
+            android:hint="@string/admin_email_tip"
+            android:inputType="text" />
+    </LinearLayout>
+
+
+    <!--  输入手机号码 -->
+    <LinearLayout
+        style="@style/m_w"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/number_tip"
+            style="@style/resigist_text"
+            android:text="@string/admin_number" />
+
+        <EditText
+            android:id="@+id/resigist_number"
+            style="@style/resigist_edit"
+            android:hint="@string/admin_number_tip"
+            android:inputType="phone"
+            android:maxLength="11" />
+    </LinearLayout>
+
+
+    <!--  密码  -->
+    <LinearLayout
+        style="@style/m_w"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/password_name"
+            style="@style/resigist_text"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/resigist_edit"
+            android:hint="@string/password_tip"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <!-- 确定密码 -->
+
+    <LinearLayout
+        style="@style/m_w"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/sure_Pwd_tip"
+            style="@style/resigist_text"
+            android:text="@string/admin_sure_psw" />
+
+        <EditText
+            android:id="@+id/sure_Pwd"
+            style="@style/resigist_edit"
+            android:hint="@string/admin_sure_psw_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/submit"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         android:onClick="submit"
         android:text="@string/submit" />
-
-
-</RelativeLayout>
+</LinearLayout>
