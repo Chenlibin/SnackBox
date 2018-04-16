@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.clb.clblibrary.activity.RootActivity;
 import com.clb.snackbox.R;
 import com.clb.snackbox.dialog.ActivityDialog;
+import com.clb.snackbox.domain.ActivitiesData;
 
 /**
  * Created by Liber on 2018/3/17.
@@ -45,32 +46,30 @@ public class ActivitiesActivity extends RootActivity implements View.OnClickList
 
     }
 
-    public void ClickLeft(View view) {
-        finish();
-    }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.activity_one:
-                makeActivitiesDialog(1);
+                makeActivitiesDialog($str(R.string.activities_one_tip));
                 break;
             case R.id.activity_two:
-                makeActivitiesDialog(2);
+                makeActivitiesDialog($str(R.string.activities_two_tip));
                 break;
             case R.id.activity_three:
-                makeActivitiesDialog(3);
+                makeActivitiesDialog($str(R.string.activities_three_tip));
                 break;
         }
     }
 
     //选择的是那个活动
-    private void makeActivitiesDialog(int i) {
-        new ActivityDialog(this) {
+    private void makeActivitiesDialog(String text) {
+
+        new ActivityDialog(this, null, text) {
             @Override
-            protected void initView() {
+            protected void changeActivity(ActivitiesData activitiesData) {
 
             }
         }.show();
+
     }
 }

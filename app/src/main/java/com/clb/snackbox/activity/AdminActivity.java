@@ -152,4 +152,8 @@ public class AdminActivity extends RootActivity {
         magicIndicator.setNavigator(commonNavigator);
         fragmentContainerHelper.attachMagicIndicator(magicIndicator);
     }
+
+    @Override
+    public void ClickLeft(View view) {
+    }
 }

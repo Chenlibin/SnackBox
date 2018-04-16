@@ -42,10 +42,14 @@
     <string name="activities_one_tip">活动一：</string>
     <string name="activities_two_tip">活动二：</string>
     <string name="activities_three_tip">活动三：</string>
+    <string name="instruction_tip">说明:(最多60个字)</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
 
     <!--  用户的我的界面  -->
     <string name="user_advise">建议意见</string>
     <string name="user_record">购买记录</string>
     <string name="user_to_admin">登录管理员</string>
+
 
 </resources>

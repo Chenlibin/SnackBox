@@ -1,12 +1,10 @@
 package com.clb.snackbox.activity.login;
 
-import android.gesture.Prediction;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.clb.clblibrary.activity.RootActivity;
 import com.clb.clblibrary.net.OKHttpUtil;
@@ -20,7 +18,6 @@ import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 
 import java.io.IOException;
-import java.util.function.Predicate;
 
 /**
  * Created by Liber on 2018/3/8.
@@ -79,8 +76,8 @@ public class LoginActivity extends RootActivity {
                     new OKHttpUtil.Param("password", password.getText().toString().trim())
             });
 
-            toast(R.string.login_in);
-            jumpAndFinsh(AdminActivity.class);
+//            toast(R.string.login_in);
+//            jumpAndFinsh(AdminActivity.class);
         }
     }
 

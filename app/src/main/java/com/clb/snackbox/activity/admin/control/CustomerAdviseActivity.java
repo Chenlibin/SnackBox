@@ -1,6 +1,5 @@
 package com.clb.snackbox.activity.admin.control;
 
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,9 +29,5 @@ public class CustomerAdviseActivity extends RootActivity {
         leftIcon = $View(R.id.leftImage);
         leftIcon.setImageResource(R.mipmap.left_icon);
 
-    }
-
-    public void ClickLeft(View view) {
-        finish();
     }
 }

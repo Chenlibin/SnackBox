@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:minHeight="200dp"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/title"
+        style="@style/w_w"
+        android:padding="5dp"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/instruction_tip"
+        style="@style/w_w"
+        android:layout_marginTop="3dp"
+        android:text="@string/instruction_tip"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/instruction"
+        style="@style/m_w"
+        android:layout_marginTop="3dp"
+        android:background="#fff"
+        android:gravity="top|left"
+        android:inputType="text"
+        android:maxLength="60"
+        android:minHeight="100dp"
+        android:singleLine="false" />
+
+    <TextView
+        style="@style/w_w"
+        android:layout_marginTop="3dp"
+        android:text="用户不可见:" />
+
+    <LinearLayout
+        style="@style/m_w"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/w_w"
+            android:text="满"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/full_price"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/w_w"
+            android:text="减"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/break_price"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/m_w"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancle_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="@string/cancle"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/sure_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#000"
+            android:text="@string/sure"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

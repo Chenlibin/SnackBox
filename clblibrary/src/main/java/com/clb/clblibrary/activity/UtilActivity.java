@@ -71,4 +71,8 @@ public class UtilActivity extends FragmentActivity {
         jump(clz);
         finish();
     }
+
+    public void ClickLeft(View view) {
+        finish();
+    }
 }
