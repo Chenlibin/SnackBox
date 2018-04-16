@@ -26,6 +26,7 @@
     <string name="login_in">进入登录界面</string>
     <string name="verification_code_number">获取验证码</string>
     <string name="sure_pwd_password">输入的密码不一样</string>
+    <string name="register_success">注册成功，请等待管理员同意</string>
 
     <!--  管理员界面   AdminActivity -->
     <string name="admin_title">尊敬的管理员</string>

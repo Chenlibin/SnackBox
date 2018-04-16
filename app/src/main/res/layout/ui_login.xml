@@ -6,23 +6,22 @@
 
     <include layout="@layout/include_bar" />
 
-    <!--  手机号  -->
+    <!--  用户名  -->
     <LinearLayout
         style="@style/m_w"
         android:layout_marginTop="100dp"
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/number_tip"
+            android:id="@+id/name_tip"
             style="@style/resigist_text"
-            android:text="@string/admin_number" />
+            android:text="@string/admin_name" />
 
         <EditText
-            android:id="@+id/phoneNumber"
+            android:id="@+id/name"
             style="@style/resigist_edit"
-            android:hint="@string/admin_number_tip"
-            android:inputType="phone"
-            android:maxLength="11" />
+            android:hint="@string/admin_name_tip"
+            android:inputType="text" />
 
     </LinearLayout>
 

@@ -9,6 +9,7 @@ import android.support.annotation.StyleRes;
 import android.view.Window;
 
 import com.clb.snackbox.R;
+import com.clb.snackbox.activity.admin.MyFragment;
 
 /**
  * Created by Liber on 2018/3/21.

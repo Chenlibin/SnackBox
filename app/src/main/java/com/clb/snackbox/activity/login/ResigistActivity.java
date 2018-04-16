@@ -64,17 +64,27 @@ public class ResigistActivity extends RootActivity {
                 @Override
                 public void onResponse(Response response) throws IOException {
                     JsonObject jsonObject = new JsonParser().parse(response.body().string()).getAsJsonObject();
-                    Log.e("onResponse: ", jsonObject + "");
+
+                    Log.e("onResponse: register", jsonObject + "");
+                    String status = jsonObject.get("status").getAsString();
+                    String message = jsonObject.get("message").getAsString();
+
+                    if (Integer.parseInt(status) == 1) {
+                        toast(R.string.register_success);
+                        jumpAndFinsh(LoginActivity.class);
+                    } else {
+                        toast(message);
+                    }
+
                 }
             }, new OKHttpUtil.Param[]{
                     new OKHttpUtil.Param("username", name.getText().toString().trim()),
                     new OKHttpUtil.Param("password", password.getText().toString().trim()),
-                    new OKHttpUtil.Param("Password2", surePwd.getText().toString().trim()),
+                    new OKHttpUtil.Param("password2", surePwd.getText().toString().trim()),
                     new OKHttpUtil.Param("tel", phoneNumber.getText().toString().trim()),
                     new OKHttpUtil.Param("email", email.getText().toString().trim()),
             });
 
-            toast("注册成功");
         } else {
 
         }

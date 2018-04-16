@@ -1,5 +1,6 @@
 package com.clb.snackbox.activity.login;
 
+import android.gesture.Prediction;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +20,7 @@ import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 
 import java.io.IOException;
+import java.util.function.Predicate;
 
 /**
  * Created by Liber on 2018/3/8.
@@ -31,7 +33,7 @@ import java.io.IOException;
 public class LoginActivity extends RootActivity {
 
     private TextView centerTitle;
-    private EditText phoneNumber;
+    private EditText name;
     private EditText password;
 
     @Override
@@ -45,7 +47,7 @@ public class LoginActivity extends RootActivity {
         centerTitle = $View(R.id.centerTitle);
         centerTitle.setText(R.string.admin_login);
 
-        phoneNumber = findViewById(R.id.phoneNumber);
+        name = findViewById(R.id.name);
         password = findViewById(R.id.password);
 
     }
@@ -53,22 +55,27 @@ public class LoginActivity extends RootActivity {
     //进入登录界面
     public void loginIn(View view) {
         if (entry()) {
-
             NetReqUtil.getNetUtil().adminLogin(new Callback() {
                 @Override
                 public void onFailure(Request request, IOException e) {
-
                     Log.e("onFailure: login", "fail");
-
                 }
 
                 @Override
                 public void onResponse(Response response) throws IOException {
                     JsonObject jsonObject = new JsonParser().parse(response.body().string()).getAsJsonObject();
                     Log.e("onResponse: login", jsonObject + "");
+
+                    String status = jsonObject.get("status").getAsString();
+                    String message = jsonObject.get("message").getAsString();
+                    if (Integer.parseInt(status) == 1) {
+                        jumpAndFinsh(AdminActivity.class);
+                    }
+                    toast(message);
+
                 }
             }, new OKHttpUtil.Param[]{
-                    new OKHttpUtil.Param("username", phoneNumber.getText().toString().trim()),
+                    new OKHttpUtil.Param("username", name.getText().toString().trim()),
                     new OKHttpUtil.Param("password", password.getText().toString().trim())
             });
 
@@ -84,8 +91,8 @@ public class LoginActivity extends RootActivity {
 
     //验证是否为空
     private boolean entry() {
-        if (TextUtils.isEmpty(phoneNumber.getText().toString().trim())) {
-            toast(R.string.admin_number_tip);
+        if (TextUtils.isEmpty(name.getText().toString().trim())) {
+            toast(R.string.admin_name_tip);
             return false;
         }
         if (TextUtils.isEmpty(password.getText().toString().trim())) {
