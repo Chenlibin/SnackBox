@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class ActivitiesData implements Serializable {
 
-    private String instruction;
-    private String fullPrice;
-    private String breakPrice;
+    private String instruction;     //活动说明（都可以为null）
+    private String fullPrice;       //满多少
+    private String breakPrice;      //减多少
 
     public String getInstruction() {
         return instruction;

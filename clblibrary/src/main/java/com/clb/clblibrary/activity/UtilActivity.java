@@ -51,7 +51,6 @@ public class UtilActivity extends FragmentActivity {
     }
 
 
-
     public void jump(Class<?> clz) {
         if (clz != null)
             startActivity(new Intent(this, clz));
@@ -74,5 +73,8 @@ public class UtilActivity extends FragmentActivity {
 
     public void ClickLeft(View view) {
         finish();
+    }
+
+    public void ClickRight(View view) {
     }
 }

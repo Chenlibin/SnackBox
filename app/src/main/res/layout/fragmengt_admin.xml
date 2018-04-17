@@ -61,18 +61,18 @@
             android:src="@mipmap/right_icon" />
 
     </RelativeLayout>
-    <!-- 发布活动管理 -->
-    <RelativeLayout style="@style/admin_control_relative">
+    <!--&lt;!&ndash; 发布活动管理 &ndash;&gt;-->
+    <!--<RelativeLayout style="@style/admin_control_relative">-->
 
-        <TextView
-            style="@style/admin_control_text"
-            android:text="@string/admin_activity" />
+        <!--<TextView-->
+            <!--style="@style/admin_control_text"-->
+            <!--android:text="@string/admin_activity" />-->
 
-        <ImageView
-            style="@style/admin_control_image"
-            android:src="@mipmap/right_icon" />
+        <!--<ImageView-->
+            <!--style="@style/admin_control_image"-->
+            <!--android:src="@mipmap/right_icon" />-->
 
-    </RelativeLayout>
+    <!--</RelativeLayout>-->
 
 
 </LinearLayout>

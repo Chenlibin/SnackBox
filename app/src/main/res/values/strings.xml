@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">零食售卖</string>
     <string name="error_tip">好像出错了</string>
+    <string name="delect">删除</string>
 
     <!--  第一次打开app 的界面  launchActivity  -->
     <string name="administrator">我是管理员</string>
@@ -45,6 +46,7 @@
     <string name="instruction_tip">说明:(最多60个字)</string>
     <string name="sure">确定</string>
     <string name="cancle">取消</string>
+    <string name="add">添加</string>
 
     <!--  用户的我的界面  -->
     <string name="user_advise">建议意见</string>

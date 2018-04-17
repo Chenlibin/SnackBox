@@ -6,4 +6,6 @@
 
     <include layout="@layout/include_bar" />
 
+
+
 </LinearLayout>

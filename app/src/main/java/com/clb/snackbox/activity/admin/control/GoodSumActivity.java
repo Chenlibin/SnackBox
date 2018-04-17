@@ -1,11 +1,15 @@
 package com.clb.snackbox.activity.admin.control;
 
-import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.clb.clblibrary.activity.RootActivity;
 import com.clb.snackbox.R;
+import com.clb.snackbox.domain.GoodData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Liber on 2018/3/17.
@@ -16,6 +20,10 @@ import com.clb.snackbox.R;
 public class GoodSumActivity extends RootActivity {
 
     private ImageView leftIcon;
+    private ListView listView;
+    private GoodSumAdapter adapter;
+
+    List<GoodData> list = new ArrayList<>();
 
     @Override
     protected int loadLayout() {
@@ -30,9 +38,16 @@ public class GoodSumActivity extends RootActivity {
         leftIcon = $View(R.id.leftImage);
         leftIcon.setImageResource(R.mipmap.left_icon);
 
+        listView = $View(R.id.listView);
+        makeData();
+
+        adapter = new GoodSumAdapter(this, list);
+        listView.setAdapter(adapter);
+
     }
 
-    public void ClickLeft(View view) {
-        finish();
+    //获取后台数据
+    private void makeData() {
+        list.clear();
     }
 }

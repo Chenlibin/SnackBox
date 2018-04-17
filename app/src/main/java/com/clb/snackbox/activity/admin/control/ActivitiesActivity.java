@@ -1,5 +1,6 @@
 package com.clb.snackbox.activity.admin.control;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -9,6 +10,9 @@ import com.clb.clblibrary.activity.RootActivity;
 import com.clb.snackbox.R;
 import com.clb.snackbox.dialog.ActivityDialog;
 import com.clb.snackbox.domain.ActivitiesData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Liber on 2018/3/17.
@@ -22,6 +26,7 @@ public class ActivitiesActivity extends RootActivity implements View.OnClickList
     private LinearLayout oneActivity;
     private LinearLayout twoActivity;
     private LinearLayout threeActivity;
+    List<ActivitiesData> list = new ArrayList<>();
 
     @Override
     protected int loadLayout() {
@@ -40,33 +45,46 @@ public class ActivitiesActivity extends RootActivity implements View.OnClickList
         twoActivity = $View(R.id.activity_two);
         threeActivity = $View(R.id.activity_three);
 
+        makeData();
+
         oneActivity.setOnClickListener(this);
         twoActivity.setOnClickListener(this);
         threeActivity.setOnClickListener(this);
 
     }
 
+    private void makeData() {
+        list.clear();
+        //获得后台数据
+
+    }
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.activity_one:
-                makeActivitiesDialog($str(R.string.activities_one_tip));
-                break;
-            case R.id.activity_two:
-                makeActivitiesDialog($str(R.string.activities_two_tip));
-                break;
-            case R.id.activity_three:
-                makeActivitiesDialog($str(R.string.activities_three_tip));
-                break;
+        if (list.size() > 0) {
+            switch (v.getId()) {
+                case R.id.activity_one:
+                    makeActivitiesDialog($str(R.string.activities_one_tip), list.get(0));
+                    break;
+                case R.id.activity_two:
+                    makeActivitiesDialog($str(R.string.activities_two_tip), list.get(1));
+                    break;
+                case R.id.activity_three:
+                    makeActivitiesDialog($str(R.string.activities_three_tip), list.get(2));
+                    break;
+            }
+        } else {
+            Log.e("ActivitiesData", "is null");
+            toast(R.string.error_tip);
         }
     }
 
     //选择的是那个活动
-    private void makeActivitiesDialog(String text) {
+    private void makeActivitiesDialog(String text, ActivitiesData activitiesData) {
 
-        new ActivityDialog(this, null, text) {
+        new ActivityDialog(this, activitiesData, text) {
             @Override
-            protected void changeActivity(ActivitiesData activitiesData) {
+            protected void changeActivity(ActivitiesData changeActData) {
 
             }
         }.show();
