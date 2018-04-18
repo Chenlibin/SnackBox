@@ -8,7 +8,8 @@
     <!-- 管理员管理 -->
     <RelativeLayout
         android:id="@+id/control_admin"
-        style="@style/admin_control_relative">
+        style="@style/admin_control_relative"
+        android:layout_marginTop="10dp">
 
         <TextView
             style="@style/admin_control_text"
@@ -19,6 +20,22 @@
             android:src="@mipmap/right_icon" />
 
     </RelativeLayout>
+
+    <!-- 修改密码 -->
+    <RelativeLayout
+        android:id="@+id/change_Pwd"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_change_Pwd" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+
     <!-- 进入买买买 -->
     <RelativeLayout
         android:id="@+id/go_to_buy"
@@ -33,6 +50,22 @@
             android:src="@mipmap/right_icon" />
 
     </RelativeLayout>
+    
+    <!-- 关于我们 -->
+    <RelativeLayout
+        android:id="@+id/about_me"
+        style="@style/admin_control_relative">
+
+        <TextView
+            style="@style/admin_control_text"
+            android:text="@string/admin_about_me" />
+
+        <ImageView
+            style="@style/admin_control_image"
+            android:src="@mipmap/right_icon" />
+
+    </RelativeLayout>
+
     <!-- 退出登录 -->
     <RelativeLayout
         android:id="@+id/login_out"

@@ -36,6 +36,8 @@
     <string name="admin_customer_advise">客户意见</string>
     <string name="admin_good_sum">零食销售统计</string>
     <string name="admin_control_admin">管理管理员</string>
+    <string name="admin_change_Pwd">修改密码</string>
+    <string name="admin_about_me">关于我们</string>
     <string name="admin_go_to_buy">进入买买买</string>
     <string name="admin_login_out">退出登录</string>
 
@@ -53,5 +55,20 @@
     <string name="user_record">购买记录</string>
     <string name="user_to_admin">登录管理员</string>
 
+    <!--  商品管理界面  -->
+    <string name="good_name">商品名称:</string>
+    <string name="good_name_tip">请输入商品名称</string>
+    <string name="good_number">商品数量:</string>
+    <string name="good_number_tip">请输入商品数量</string>
+    <string name="production_date">生产日期:</string>
+    <string name="production_date_tip">请输入生产日期</string>
+    <string name="good_content">商品说明:(少于60字)</string>
+    <string name="good_content_tip">请输入商品说明</string>
+    <string name="good_price">商品价格:</string>
+    <string name="good_price_tip">请输入商品价格</string>
+    <string name="good_photo">商品图片</string>
+    <string name="good_photo_tip">请选择商品图片</string>
+    <string name="add_good">添加商品</string>
+    <string name="change_good">修改商品信息</string>
 
 </resources>

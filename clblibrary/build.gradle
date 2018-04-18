@@ -44,4 +44,8 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.7.5'
     compile 'com.squareup.okio:okio:1.7.0'
     compile 'com.google.code.gson:gson:2.8.1'
+    //图片选择工具/剪切
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.7'
+    //图片加载工具（可以单独使用）
+    compile 'me.panpf:sketch:2.6.0'
 }

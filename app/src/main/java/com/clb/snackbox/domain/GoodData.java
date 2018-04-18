@@ -10,6 +10,15 @@ public class GoodData implements Serializable {
     private String goodContent;         //商品说明
     private String goodPrice;           //商品价格
     private String goodPhoto;           //商品图片
+    private String goodNumber;          //商品数量
+
+    public String getGoodNumber() {
+        return goodNumber;
+    }
+
+    public void setGoodNumber(String goodNumber) {
+        this.goodNumber = goodNumber;
+    }
 
     public String getGoodName() {
         return goodName;

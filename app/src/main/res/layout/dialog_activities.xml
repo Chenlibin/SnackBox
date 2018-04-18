@@ -33,7 +33,7 @@
         android:layout_marginTop="3dp"
         android:background="#fff"
         android:gravity="top|left"
-        android:inputType="text"
+        android:inputType="text|textMultiLine"
         android:maxLength="60"
         android:minHeight="100dp"
         android:singleLine="false" />

@@ -67,7 +67,7 @@
 
     <!-- 管理员界面 -->
     <style name="admin_control_relative" parent="m_w">
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginTop">1dp</item>
         <item name="android:padding">10dp</item>
         <item name="android:background">#fff</item>
     </style>

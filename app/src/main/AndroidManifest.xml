@@ -70,6 +70,9 @@
         <activity
             android:name=".activity.admin.my.ControlAdminActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.admin.control.ChangeAddGoodActivity"
+            android:screenOrientation="portrait" />
 
     </application>
 
