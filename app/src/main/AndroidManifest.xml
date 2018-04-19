@@ -28,9 +28,6 @@
             <!--</intent-filter>-->
         </activity>
         <activity
-            android:name=".activity.login.LoginActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".activity.QRActivity"
             android:screenOrientation="portrait">
             <!--<intent-filter>-->
@@ -38,20 +35,28 @@
             <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity
-            android:name=".activity.login.ResigistActivity"
-            android:screenOrientation="portrait" />
 
         <activity
             android:name=".activity.AdminActivity"
             android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.AfterQRActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
+        </activity>
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.ResigistActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.admin.control.ActivitiesActivity"
             android:screenOrientation="portrait" />
@@ -65,13 +70,13 @@
             android:name=".activity.admin.control.GoodSumActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.AfterQRActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.admin.my.ControlAdminActivity"
+            android:name=".activity.admin.my.ManagementAdminActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.admin.control.ChangeAddGoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.admin.my.AboutMeActivity"
             android:screenOrientation="portrait" />
 
     </application>

@@ -34,8 +34,8 @@
         android:background="#fff"
         android:gravity="top|left"
         android:inputType="text|textMultiLine"
-        android:maxLength="60"
-        android:minHeight="100dp"
+        android:maxLength="20"
+        android:minHeight="80dp"
         android:singleLine="false" />
 
     <TextView
@@ -46,6 +46,7 @@
     <LinearLayout
         style="@style/m_w"
         android:layout_marginTop="3dp"
+        android:background="#fff"
         android:orientation="horizontal">
 
         <TextView
@@ -78,6 +79,7 @@
 
     <LinearLayout
         style="@style/m_w"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <Button

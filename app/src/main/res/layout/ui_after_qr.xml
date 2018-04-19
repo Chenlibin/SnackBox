@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f0f0f0"
     android:orientation="vertical">
 
-    <include layout="@layout/include_bar" />
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/include_bar" />
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/activities_bar"
+        style="@style/m_w"
+        android:layout_below="@+id/titleBar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/act_one"
+            style="@style/afterQr_act_text" />
+
+        <TextView
+            android:id="@+id/act_two"
+            style="@style/afterQr_act_text" />
+
+        <TextView
+            android:id="@+id/act_three"
+            style="@style/afterQr_act_text" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        style="@style/m_w"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#666">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5sp"
+            android:src="@mipmap/shopping_car" />
+    </RelativeLayout>
+</RelativeLayout>

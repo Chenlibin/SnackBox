@@ -2,8 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f0f0f0"
     android:orientation="vertical">
 
     <include layout="@layout/include_bar" />
+
+    <TextView
+        style="@style/m_w"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/add_management"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/add_management"
+        style="@style/m_w" />
+
+
+    <TextView
+        style="@style/m_w"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/delect_management"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/delect_management"
+        style="@style/m_w" />
 
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.clb.snackbox.activity.admin.control;
 
 import android.content.Intent;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import com.clb.clblibrary.activity.RootActivity;
 import com.clb.snackbox.R;
 import com.clb.snackbox.domain.GoodData;
+import com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView;
 
 /**
  * Created by Liber on 2018/3/17.
@@ -19,6 +21,8 @@ import com.clb.snackbox.domain.GoodData;
  */
 
 public class GoodsActivity extends RootActivity {
+
+    private SwipeMenuRecyclerView recyclerView;
 
     private TextView centerTitle;
     private ImageView leftIcon;
@@ -38,6 +42,10 @@ public class GoodsActivity extends RootActivity {
         centerTitle.setText(R.string.admin_goods);
         leftIcon.setImageResource(R.mipmap.left_icon);
         rightIcon.setImageResource(R.mipmap.add);
+
+        recyclerView = $View(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     @Override

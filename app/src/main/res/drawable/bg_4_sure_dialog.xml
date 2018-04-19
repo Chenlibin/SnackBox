@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFF" />
+
+    <corners android:radius="10dp" />
+
+    <stroke
+        android:width="0.3dp"
+        android:color="#000" />
+</shape><!--
+    corners      圆角
+    gradient     渐变
+    padding      内边距
+    size         大小
+    solid        填充颜色
+    stroke       描边
+    -->

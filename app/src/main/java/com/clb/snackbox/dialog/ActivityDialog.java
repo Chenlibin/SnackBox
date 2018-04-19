@@ -20,7 +20,7 @@ import com.clb.snackbox.domain.ActivitiesData;
 
 public abstract class ActivityDialog extends Dialog {
 
-    private EditText instruction;           //说明
+    private EditText instruction;          //说明
     private EditText fullPrice;            //满多少
     private EditText breakPrice;           //减多少
     private ActivitiesData activitiesData;

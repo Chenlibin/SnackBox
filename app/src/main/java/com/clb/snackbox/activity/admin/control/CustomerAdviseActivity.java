@@ -75,7 +75,7 @@ public class CustomerAdviseActivity extends RootActivity {
                     .setBackgroundColor(0xffff555b)
                     .setText(R.string.delect)
                     .setTextColor(0xffffffff)
-                    .setWeight(ViewUtil.dip2px(70))
+                    .setWeight(ViewUtil.dip2px(70.0f))
                     .setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
             swipeRightMenu.addMenuItem(delectItem);
         }

@@ -1,5 +1,6 @@
 package com.clb.snackbox.activity;
 
+import android.view.View;
 import android.widget.TextView;
 
 import com.clb.clblibrary.activity.RootActivity;
@@ -25,6 +26,12 @@ public class AfterQRActivity extends RootActivity {
 
         centerText = findViewById(R.id.centerTitle);
         centerText.setText(getIntent().getStringExtra("title"));
+
+    }
+
+    //点击左的按钮
+    @Override
+    public void ClickLeft(View view) {
 
     }
 }

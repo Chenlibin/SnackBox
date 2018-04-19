@@ -25,4 +25,6 @@
     <color name="grayLine">#e5e5e5</color>
     <!-- 灰色，二级字段 -->
     <color name="gray2">#666666</color>
+
+    <color name="text">#00ee00</color>
 </resources>

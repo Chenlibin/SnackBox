@@ -2,6 +2,7 @@
     <string name="app_name">零食售卖</string>
     <string name="error_tip">好像出错了</string>
     <string name="delect">删除</string>
+    <string name="isSure">你认真的吗？</string>
 
     <!--  第一次打开app 的界面  launchActivity  -->
     <string name="administrator">我是管理员</string>
@@ -45,7 +46,7 @@
     <string name="activities_one_tip">活动一：</string>
     <string name="activities_two_tip">活动二：</string>
     <string name="activities_three_tip">活动三：</string>
-    <string name="instruction_tip">说明:(最多60个字)</string>
+    <string name="instruction_tip">说明:(最多20个字)</string>
     <string name="sure">确定</string>
     <string name="cancle">取消</string>
     <string name="add">添加</string>
@@ -71,4 +72,11 @@
     <string name="add_good">添加商品</string>
     <string name="change_good">修改商品信息</string>
 
+    <!-- 管理管理员的界面 -->
+    <string name="add_management">申请成为管理员</string>
+    <string name="delect_management">删除管理员</string>
+
+    <!-- 关于我们 -->
+    <string name="check_upData">检查新版本</string>
+    <string name="is_new">已经是最新版本</string>
 </resources>

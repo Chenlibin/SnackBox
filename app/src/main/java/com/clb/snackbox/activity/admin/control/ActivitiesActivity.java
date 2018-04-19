@@ -81,7 +81,7 @@ public class ActivitiesActivity extends RootActivity implements View.OnClickList
 
     //选择的是那个活动
     private void makeActivitiesDialog(String text, ActivitiesData activitiesData) {
-
+        //点击后，弹个对话框，对活动内容进行修改，修改完返回上传和修改本地显示的
         new ActivityDialog(this, activitiesData, text) {
             @Override
             protected void changeActivity(ActivitiesData changeActData) {
