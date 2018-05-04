@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:id="@+id/LeftMenuWindow"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="left"
-              android:orientation="vertical">
+              android:gravity="left">
 
     <!-- 左侧列表 -->
+    <!-- 模糊分类，列表内可以分为许多领域：方便面，饮料，面筋，辣条，糖果等等 -->
     <ListView
-        android:id="@+id/lvTopMenuWindowMenu"
+        android:id="@+id/LeftMenuWindowMenu"
         style="@style/wrap_wrap"
         android:layout_width="150dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="60dp"
         android:layout_marginTop="5dp"
         android:cacheColorHint="#00000000"
         android:divider="#3000"
         android:dividerHeight="1px"
         android:listSelector="@drawable/null_drawable"
         android:minWidth="150dp"
-        android:padding="0dp">
+        android:padding="0dp"
+        tools:ignore="RtlHardcoded">
+
+    </ListView>
+
+    <!-- 收起按钮，不到用不用得到，可以去掉直接让左侧的一直显示 -->
+    <!-- 显示在右边的列表上方也可行 -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="40dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/LeftMenuWindow"
+        android:background="#3000"
+        android:gravity="center"
+        android:text="收起"
+        android:textSize="10pt"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#abcdef"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/wrap_wrap"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#3000"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/null_drawable"
+        android:minWidth="150dp"
+        android:padding="0dp"
+        tools:ignore="RtlHardcoded">
 
     </ListView>
 </RelativeLayout>
+
+
+</LinearLayout>

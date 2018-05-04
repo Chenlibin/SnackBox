@@ -4,6 +4,8 @@
     android:layout_height="48dp">
 
 
+    <!-- 可以inclue到其他的XML,当数据加载不出来显示，监听TextView，点击刷新 -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

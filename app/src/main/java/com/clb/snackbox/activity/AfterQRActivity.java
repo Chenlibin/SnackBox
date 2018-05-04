@@ -18,7 +18,7 @@ public class AfterQRActivity extends RootActivity {
 
     @Override
     protected int loadLayout() {
-        return R.layout.ui_after_qr;
+        return R.layout.ui_shopping_cart;
     }
 
     @Override

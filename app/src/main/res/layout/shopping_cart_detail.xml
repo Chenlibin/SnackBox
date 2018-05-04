@@ -70,6 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:text="2018-4-1"/>
+
             <!-- 有没有存货 -->
             <TextView
                 android:id="@+id/SellText"

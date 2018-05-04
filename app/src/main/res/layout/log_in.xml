@@ -89,26 +89,28 @@
                 android:padding="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/tv_wei_xin_login"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawablePadding="5dp"
-                    android:drawableTop="@mipmap/share_wechat"
-                    android:text="微信账号登录"
-                    android:gravity="center" />
-                <TextView
-                    android:id="@+id/tv_qq_login"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_weight="1"
-                    android:drawablePadding="5dp"
-                    android:drawableTop="@mipmap/share_qq"
-                    android:text="QQ账号登录"
-                    android:visibility="visible"
-                    android:gravity="center" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_wei_xin_login"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:drawableTop="@mipmap/share_wechat"-->
+                    <!--android:text="微信账号登录"-->
+                    <!--android:gravity="center" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_qq_login"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:drawableTop="@mipmap/share_qq"-->
+                    <!--android:text="QQ账号登录"-->
+                    <!--android:visibility="visible"-->
+                    <!--android:gravity="center" />-->
+
                 <TextView
                     android:id="@+id/tv_sina_login"
                     android:layout_width="0dp"
